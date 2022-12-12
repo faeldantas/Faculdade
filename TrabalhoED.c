@@ -1,26 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct disciplina{    //Cria uma struct para informações de uma disciplina
+//Cria uma struct para informações de uma disciplina
+typedef struct disciplina{    
     int id;
     char *nome;
     double notaFinal;
 }DI;
 
-typedef struct no{          //Cria uma struct para informações pessoais do aluno
+//Cria uma struct para informações pessoais do aluno
+typedef struct no{          
     int count;
     int chave;
     int idade;
     char *nome;
-    DI *disciplinas[10];     //Vetor, onde cada célula aponta para uma struct "Disciplina"
+    DI *disciplinas[10]; //Vetor, onde cada célula aponta para uma struct "Disciplina"
     struct no *esq;
     struct no *dir;
 }NO;
 
-NO* raiz = NULL;            //Cria uma variável que armazena o endereço do primeiro nó da ABB
+//Cria uma variável que armazena o endereço do primeiro nó da ABB
+NO* raiz = NULL;            
 
-NO* busca(int x, NO* aux){  //busca nó referente à informação passada como parâmetro, que nesse caso será chave do aluno(matrícula)
-    if(aux == NULL){        //verifica se a raíz é nula, ou seja, se a árvore é vazia 
+//busca nó referente à informação passada como parâmetro, que nesse caso será chave do aluno(matrícula)
+NO* busca(int x, NO* aux){  
+    if(aux == NULL){ //verifica se a raíz é nula, ou seja, se a árvore é vazia 
         return NULL; 
     }else if(x == aux->chave){//Caso não seja vazia, verifica se a informação passada como parâmetro é a mesma no nó
         return aux; 
@@ -214,10 +218,6 @@ int main(){
     add_disciplinas(10, 18, "PAA", 5.0);
     add_disciplinas(10, 19, "Eng. de Softwere", 4.0);
     add_disciplinas(10, 20, "Empeendedorismo", 3.0);
-    
-
-
-    
 
     do{
         printf("====================\n Binary Tree\n====================\n[1] - Adicionar\n[2] - Remover\n[3] - Alterar\n[4] - Buscar\n[5]- Imprimir\n[6] - Adicionar disciplina\n[0] - Sair\nEscolha: ");
