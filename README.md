@@ -3,4 +3,4 @@ A principal aplicabilidade no seus desenvolvimento é aplicar o que foi aprendid
 podendo armazenar, remover, buscar e editar informações de alunos apartir dessa estrutura.
 
 ## Funcionamento
-O programa é um sistema de cadastro de alunos, tendo dodas as funcionalidades de um `CRUD` simples.
+O programa é um sistema de cadastro de alunos, tendo todas as funcionalidades de um `CRUD` simples.
