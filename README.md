@@ -1,5 +1,5 @@
 ## Ideia geral
-A principal aplicabilidade no seus desenvolvimento é aplicar o que foi aprendido sobre `árvore binaria de busca`,
+Esse repositório tem como objetivo aplicar o que foi aprendido sobre `árvore binaria de busca`,
 podendo armazenar, remover, buscar e editar informações de alunos apartir dessa estrutura.
 
 ## Funcionamento
